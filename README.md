@@ -49,4 +49,4 @@ The web app displays visualizations of the data, allows to input message and add
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
-Thanks udacity and figure8 for this project.
+Thanks Udacity and Figure Eight for this project.
