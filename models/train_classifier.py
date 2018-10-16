@@ -106,7 +106,6 @@ def build_model():
                    'clf__estimator__n_estimators': [100],
                    'clf__estimator__max_features': [2000]
                   }
-
     # use grid search to find better parameters. 
     cv = GridSearchCV(pipeline, param_grid=parameters, verbose=2)
 
