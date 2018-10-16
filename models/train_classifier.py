@@ -93,11 +93,19 @@ def build_model():
         ('clf', MultiOutputClassifier(RandomForestClassifier()))
     ])
 
+    #tested multiple parameters options
+#    parameters = {
+#                    'vect__max_df': (0.2, 0.5),
+#                  'clf__estimator__n_estimators': [100,200],
+#                  'clf__estimator__max_features': [2000, 4000]
+#                 }
+
+    #choose the best one and faster one to speed up model training 
     parameters = {
-                    'vect__max_df': (0.2, 0.5),
-                  'clf__estimator__n_estimators': [100,200],
-                  'clf__estimator__max_features': [2000, 4000]
-                 }
+                     'vect__max_df': [0.2],
+                   'clf__estimator__n_estimators': [100],
+                   'clf__estimator__max_features': [2000]
+                  }
 
     # use grid search to find better parameters. 
     cv = GridSearchCV(pipeline, param_grid=parameters, verbose=2)
