@@ -6,7 +6,7 @@
 3. [Licensing, Authors, and Acknowledgements](#licensing)
 
 ## Project Overview<a name="overview"></a>
-In this project,  disaster data from Figure Eight were analized to build a model for an API that classifies disaster messages.
+In this project,  disaster data from Figure Eight was analized to build a model for an API that classifies disaster messages.
 
 The data set contains real messages that were sent during disaster events. The trained machine learning pipeline categorizes these events so that messages can be send to an appropriate disaster relief agency.
 
